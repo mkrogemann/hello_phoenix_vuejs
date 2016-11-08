@@ -7,29 +7,50 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello HelloPhoenixVuejs!</title>
+    <title>HelloPhoenixVuejs!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a class="navbar-brand"><i class="glyphicon glyphicon-bullhorn"></i> Vue Events Bulletin Board</a>
+      </div>
+    </nav>
+
+    <!-- main body of our application -->
+    <div class="container" id="events">
+
+      <!-- add an event form -->
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Add an Event</h3>
+          </div>
+          <div class="panel-body">
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- show the events -->
+      <div class="col-sm-6">
+        <div class="list-group">
+
+        </div>
+      </div>
+
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
 
     </div> <!-- /container -->
+
+    <!-- JS -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
