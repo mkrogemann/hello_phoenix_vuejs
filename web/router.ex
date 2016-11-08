@@ -1,5 +1,5 @@
-defmodule OpenBahnWeb.Router do
-  use OpenBahnWeb.Web, :router
+defmodule HelloPhoenixVuejs.Router do
+  use HelloPhoenixVuejs.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule OpenBahnWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", OpenBahnWeb do
+  scope "/", HelloPhoenixVuejs do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", OpenBahnWeb do
+  # scope "/api", HelloPhoenixVuejs do
   #   pipe_through :api
   # end
 end

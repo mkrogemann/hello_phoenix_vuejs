@@ -1,4 +1,4 @@
-# OpenBahnWeb
+# HelloPhoenixVuejs
 
 To start your Phoenix app:
 

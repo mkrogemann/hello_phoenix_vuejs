@@ -1,8 +1,8 @@
-defmodule OpenBahnWeb.Mixfile do
+defmodule HelloPhoenixVuejs.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :open_bahn_web,
+    [app: :hello_phoenix_vuejs,
      version: "0.0.1",
      elixir: "~> 1.2",
      elixirc_paths: elixirc_paths(Mix.env),
@@ -16,7 +16,7 @@ defmodule OpenBahnWeb.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {OpenBahnWeb, []},
+    [mod: {HelloPhoenixVuejs, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext]]
   end
 

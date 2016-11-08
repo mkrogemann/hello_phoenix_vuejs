@@ -1,4 +1,4 @@
-defmodule OpenBahnWeb do
+defmodule HelloPhoenixVuejs do
   use Application
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
@@ -9,21 +9,21 @@ defmodule OpenBahnWeb do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the endpoint when the application starts
-      supervisor(OpenBahnWeb.Endpoint, []),
-      # Start your own worker by calling: OpenBahnWeb.Worker.start_link(arg1, arg2, arg3)
-      # worker(OpenBahnWeb.Worker, [arg1, arg2, arg3]),
+      supervisor(HelloPhoenixVuejs.Endpoint, []),
+      # Start your own worker by calling: HelloPhoenixVuejs.Worker.start_link(arg1, arg2, arg3)
+      # worker(HelloPhoenixVuejs.Worker, [arg1, arg2, arg3]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: OpenBahnWeb.Supervisor]
+    opts = [strategy: :one_for_one, name: HelloPhoenixVuejs.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    OpenBahnWeb.Endpoint.config_change(changed, removed)
+    HelloPhoenixVuejs.Endpoint.config_change(changed, removed)
     :ok
   end
 end

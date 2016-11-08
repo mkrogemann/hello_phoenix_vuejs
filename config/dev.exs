@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :open_bahn_web, OpenBahnWeb.Endpoint,
+config :hello_phoenix_vuejs, HelloPhoenixVuejs.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -16,7 +16,7 @@ config :open_bahn_web, OpenBahnWeb.Endpoint,
 
 
 # Watch static and templates for browser reloading.
-config :open_bahn_web, OpenBahnWeb.Endpoint,
+config :hello_phoenix_vuejs, HelloPhoenixVuejs.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},

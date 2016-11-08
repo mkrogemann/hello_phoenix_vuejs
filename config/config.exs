@@ -6,11 +6,11 @@
 use Mix.Config
 
 # Configures the endpoint
-config :open_bahn_web, OpenBahnWeb.Endpoint,
+config :hello_phoenix_vuejs, HelloPhoenixVuejs.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "z/GQ4d/IhUS/MBzb3o7hiNEeibDIB0mG+08Ezf8wqGn5zwzahTFQ8fiBJMW/sv5H",
-  render_errors: [view: OpenBahnWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: OpenBahnWeb.PubSub,
+  render_errors: [view: HelloPhoenixVuejs.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: HelloPhoenixVuejs.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

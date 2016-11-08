@@ -1,3 +1,3 @@
-defmodule OpenBahnWeb.LayoutViewTest do
-  use OpenBahnWeb.ConnCase, async: true
+defmodule HelloPhoenixVuejs.LayoutViewTest do
+  use HelloPhoenixVuejs.ConnCase, async: true
 end

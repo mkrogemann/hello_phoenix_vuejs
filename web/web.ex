@@ -1,12 +1,12 @@
-defmodule OpenBahnWeb.Web do
+defmodule HelloPhoenixVuejs.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use OpenBahnWeb.Web, :controller
-      use OpenBahnWeb.Web, :view
+      use HelloPhoenixVuejs.Web, :controller
+      use HelloPhoenixVuejs.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -26,8 +26,8 @@ defmodule OpenBahnWeb.Web do
     quote do
       use Phoenix.Controller
 
-      import OpenBahnWeb.Router.Helpers
-      import OpenBahnWeb.Gettext
+      import HelloPhoenixVuejs.Router.Helpers
+      import HelloPhoenixVuejs.Gettext
     end
   end
 
@@ -41,9 +41,9 @@ defmodule OpenBahnWeb.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import OpenBahnWeb.Router.Helpers
-      import OpenBahnWeb.ErrorHelpers
-      import OpenBahnWeb.Gettext
+      import HelloPhoenixVuejs.Router.Helpers
+      import HelloPhoenixVuejs.ErrorHelpers
+      import HelloPhoenixVuejs.Gettext
     end
   end
 
@@ -56,7 +56,7 @@ defmodule OpenBahnWeb.Web do
   def channel do
     quote do
       use Phoenix.Channel
-      import OpenBahnWeb.Gettext
+      import HelloPhoenixVuejs.Gettext
     end
   end
 

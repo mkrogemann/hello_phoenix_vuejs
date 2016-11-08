@@ -1,11 +1,11 @@
-defmodule OpenBahnWeb.Gettext do
+defmodule HelloPhoenixVuejs.Gettext do
   @moduledoc """
   A module providing Internationalization with a gettext-based API.
 
   By using [Gettext](https://hexdocs.pm/gettext),
   your module gains a set of macros for translations, for example:
 
-      import OpenBahnWeb.Gettext
+      import HelloPhoenixVuejs.Gettext
 
       # Simple translation
       gettext "Here is the string to translate"
@@ -20,5 +20,5 @@ defmodule OpenBahnWeb.Gettext do
 
   See the [Gettext Docs](https://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :open_bahn_web
+  use Gettext, otp_app: :hello_phoenix_vuejs
 end

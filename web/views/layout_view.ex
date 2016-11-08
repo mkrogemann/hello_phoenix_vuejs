@@ -1,3 +1,3 @@
-defmodule OpenBahnWeb.LayoutView do
-  use OpenBahnWeb.Web, :view
+defmodule HelloPhoenixVuejs.LayoutView do
+  use HelloPhoenixVuejs.Web, :view
 end

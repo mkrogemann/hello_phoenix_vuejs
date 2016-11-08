@@ -1,14 +1,14 @@
-defmodule OpenBahnWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :open_bahn_web
+defmodule HelloPhoenixVuejs.Endpoint do
+  use Phoenix.Endpoint, otp_app: :hello_phoenix_vuejs
 
-  socket "/socket", OpenBahnWeb.UserSocket
+  socket "/socket", HelloPhoenixVuejs.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :open_bahn_web, gzip: false,
+    at: "/", from: :hello_phoenix_vuejs, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -35,8 +35,8 @@ defmodule OpenBahnWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_open_bahn_web_key",
+    key: "_hello_phoenix_vuejs_key",
     signing_salt: "lTHHT0L8"
 
-  plug OpenBahnWeb.Router
+  plug HelloPhoenixVuejs.Router
 end

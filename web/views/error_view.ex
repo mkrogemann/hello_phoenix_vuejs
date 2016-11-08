@@ -1,5 +1,5 @@
-defmodule OpenBahnWeb.ErrorView do
-  use OpenBahnWeb.Web, :view
+defmodule HelloPhoenixVuejs.ErrorView do
+  use HelloPhoenixVuejs.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

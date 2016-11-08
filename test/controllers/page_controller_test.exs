@@ -1,5 +1,5 @@
-defmodule OpenBahnWeb.PageControllerTest do
-  use OpenBahnWeb.ConnCase
+defmodule HelloPhoenixVuejs.PageControllerTest do
+  use HelloPhoenixVuejs.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

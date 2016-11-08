@@ -1,4 +1,4 @@
-defmodule OpenBahnWeb.ChannelCase do
+defmodule HelloPhoenixVuejs.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -22,7 +22,7 @@ defmodule OpenBahnWeb.ChannelCase do
 
 
       # The default endpoint for testing
-      @endpoint OpenBahnWeb.Endpoint
+      @endpoint HelloPhoenixVuejs.Endpoint
     end
   end
 

@@ -1,4 +1,4 @@
-defmodule OpenBahnWeb.ErrorHelpers do
+defmodule HelloPhoenixVuejs.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule OpenBahnWeb.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(OpenBahnWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(HelloPhoenixVuejs.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(OpenBahnWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(HelloPhoenixVuejs.Gettext, "errors", msg, opts)
     end
   end
 end

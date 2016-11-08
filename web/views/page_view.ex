@@ -1,3 +1,3 @@
-defmodule OpenBahnWeb.PageView do
-  use OpenBahnWeb.Web, :view
+defmodule HelloPhoenixVuejs.PageView do
+  use HelloPhoenixVuejs.Web, :view
 end
