@@ -9,7 +9,8 @@ defmodule HelloPhoenixVuejs.Mixfile do
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     deps: deps(),
+     aliases: aliases()]
   end
 
   # Configuration for the OTP application.
@@ -23,6 +24,10 @@ defmodule HelloPhoenixVuejs.Mixfile do
   # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "web", "test/support"]
   defp elixirc_paths(_),     do: ["lib", "web"]
+
+  defp aliases do
+    [ps: "phoenix.server"]
+  end
 
   # Specifies your project dependencies.
   #
